@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+public class Calculator {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Ввод чисел
+        System.out.print("Введите первое число: ");
+        int a = scanner.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int b = scanner.nextInt();
+
+        System.out.print("Введите оператор (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        int result;
+        switch (operator) {
+            case '+':
+                result = a + b;
+                System.out.println("Результат: " + result);
+                break;
+            case '-':
+                result = a - b;
+                System.out.println("Результат: " + result);
+                break;
+            case '*':
+                result = a * b;
+                System.out.println("Результат: " + result);
+                break;
+            case '/':
+                if (b != 0) {
+                    double divisionResult = (double) a / b;
+                    System.out.println("Результат: " + divisionResult);
+                } else {
+                    System.out.println("Ошибка: Деление на ноль невозможно.");
+                }
+                break;
+            default:
+                System.out.println("Ошибка: Неверный оператор.");
+                break;
+        }
+
+        scanner.close();
+    }
+}
