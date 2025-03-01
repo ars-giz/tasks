@@ -1,0 +1,13 @@
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        double b = 5.5;
+        char c = 'J';
+        double sum = a + b;
+        double product = a * b;
+        int С = (int) c;
+        System.out.println("Сумма: " + sum);
+        System.out.println("Произведение: " + product);
+        System.out.println("Код символа J: " + С);
+    }
+}
