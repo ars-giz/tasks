@@ -1,0 +1,10 @@
+public class Main {
+    public static void main(String[] args) {
+        double x = 9.99;
+        int y = (int)x;
+        double z = y;
+        System.out.println("x (double): " + x);
+        System.out.println("y (int): " + y);
+        System.out.println("z (double): " + z);
+    }
+}
